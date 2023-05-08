@@ -1,7 +1,11 @@
-const mod1 = require('./mod1');
+const mod1 = require('./A/mod1');
 const axios = require('axios');
-const cachorro = require('./mod3');
-const multiplicacao = require('./mod2');
+const cachorro = require('./B/Ba/mod3');
+const multiplicacao = require('./A/Ab/mod2');
+const path = require('path')
+console.log(path.resolve(
+    __dirname, '..', '..'
+))
 
 
 mod1.falaNome()
@@ -20,3 +24,6 @@ console.log(multiplicacao(2, 4))
 
 c1 = new cachorro('dogo')
 c1.latir()
+
+console.log(__dirname)
+console.log(__filename)
