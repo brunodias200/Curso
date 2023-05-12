@@ -1,8 +1,9 @@
-exports.paginaInicial = (req, res)=>{
-    res.render('index'); // envia informação para o html
+exports.paginaInicial = (req, res) => {
+  res.render('index');
+  return;
 };
 
-exports.trataPost = (req, res)=>{
-    let nome = req.body.nome;
-    res.send(`Olá ${nome}`)
-}
+exports.trataPost = (req, res) => {
+  res.send(req.body);
+  return;
+};
