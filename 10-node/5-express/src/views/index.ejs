@@ -12,6 +12,15 @@
 
   <section class="container">
     <h1>Lorem ipsum dolor sit amet</h1>
+    <h1>
+      <% if(typeof titulo !== 'undefined') { %>
+        <%= titulo %> <br><!-- não exibe tag HTML -->      
+        <%- titulo %><!-- exibe tag HTML -->
+      <% } else {%>
+        sem titulo
+      <% } %>
+
+    </h1>
     <form action="/" method="post">
       <label>Cliente</label>
       <input type="text" name="cliente">
