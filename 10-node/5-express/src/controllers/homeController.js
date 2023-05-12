@@ -24,8 +24,3 @@ exports.trataPost = (req, res) => {
   res.send(req.body);
   return;
 };
-
-class Home {
-
-}
-module.exports = Home;
