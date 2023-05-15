@@ -1,19 +1,14 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Modelo</title>
-</head>
-
-<body>
-
+<%- include('includes/head'); %>
   <section class="container">
     <h1>Lorem ipsum dolor sit amet</h1>
     <h1>
-      <% if(typeof titulo !== 'undefined') { %>
+      <% for(let num of numeros) { %>
+
+        <%# este é um comentário EJS %> <br> 
+        <%= num %> <br>
+
+      <% } %> <br>
+      <% if(typeof titulo !== 'undefined') { %> <!-- IF , utilizar <%%> para executar funções -->
         <%= titulo %> <br><!-- não exibe tag HTML -->      
         <%- titulo %><!-- exibe tag HTML -->
       <% } else {%>
@@ -27,8 +22,5 @@
       <button>Submit</button>
     </form>
   </section>
-
-  <script src="./assets/js/bundle.js"></script>
-</body>
-
-</html>
+  
+<%- include('includes/footer'); %>
