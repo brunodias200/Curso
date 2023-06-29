@@ -1,5 +1,5 @@
 import React from 'react';
-import { Title } from './styled';
+import { Paragrafo, Title } from './styled';
 import { Container } from '../../styles/GlobalStyles';
 
 export default function Login() {
@@ -9,7 +9,10 @@ export default function Login() {
         Página de Login
         <small>teste</small>
       </Title>
-      <p>teste testes tes testse es</p>
+      <Paragrafo>
+        <p>teste testes tes testse es</p>
+      </Paragrafo>
+      <button type="button">teste</button>
     </Container>
   );
 }
