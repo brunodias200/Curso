@@ -5,14 +5,12 @@ import { Container } from '../../styles/GlobalStyles';
 export default function Login() {
   return (
     <Container>
-      <Title isRed={false}>
-        Página de Login
-        <small>teste</small>
+      <Title>
+        Login
+        <small>Oie</small>
       </Title>
-      <Paragrafo>
-        <p>teste testes tes testse es</p>
-      </Paragrafo>
-      <button type="button">teste</button>
+      <Paragrafo>Lorem ipsum dolor sit amet.</Paragrafo>
+      <button type="button">Enviar</button>
     </Container>
   );
 }
