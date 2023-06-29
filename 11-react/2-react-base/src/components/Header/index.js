@@ -6,13 +6,13 @@ import { Nav } from './styled';
 export default function Header() {
   return (
     <Nav>
-      <a href="">
+      <a href="/">
         <FaHome size={24} />
       </a>
-      <a href="">
+      <a href="/">
         <FaUserAlt size={24} />
       </a>
-      <a href="">
+      <a href="/">
         <FaSignInAlt size={24} />
       </a>
     </Nav>
