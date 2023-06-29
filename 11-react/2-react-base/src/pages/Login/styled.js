@@ -6,3 +6,5 @@ export const Title = styled.h1`
     font-size: 11pt;
   }
 `;
+
+export const Paragrafo = styled.p``;
